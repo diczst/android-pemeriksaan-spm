@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.neonusa.periksaspm.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_spm_stasiun"
+            app:destination="@id/navigation_spm_stasiun"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/navigation_home"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_spm_perjalanan"
+            app:destination="@id/navigation_spm_perjalanan"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/navigation_home"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_spm_stasiun"
+        android:name="com.neonusa.periksaspm.ui.spmstasiun.SPMStasiunFragment"
+        android:label="@string/title_spm_stasiun"
+        tools:layout="@layout/fragment_spmstasiun">
+
+        <action
+            android:id="@+id/action_navigation_spm_stasiun_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/navigation_spm_stasiun"
+            app:popUpToInclusive="true"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_spm_perjalanan"
+        android:name="com.neonusa.periksaspm.ui.spmperjalanan.SPMPerjalananFragment"
+        android:label="@string/title_spm_perjalanan"
+        tools:layout="@layout/fragment_spmperjalanan">
+
+        <action
+            android:id="@+id/action_navigation_spm_perjalanan_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/navigation_spm_perjalanan"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.neonusa.periksaspm.ui.profile.ProfileFragment"
+        android:label="@string/title_profil"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

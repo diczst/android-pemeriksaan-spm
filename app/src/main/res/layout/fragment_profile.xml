@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_bantuan"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/help"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textSize="@dimen/_10ssp"
+            android:text="Bantuan"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_hi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:textSize="@dimen/_15ssp"
+            android:text="My Profile"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:stateListAnimator="@null"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="@dimen/_50sdp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:padding="@dimen/_8sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/baseline_person_outline_24_white"
+                        android:background="?attr/colorPrimary" />
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <ImageView
+                android:id="@+id/small_icon"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:src="@drawable/camera"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textSize="@dimen/_11ssp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="Nama"/>
+
+        <EditText
+            android:id="@+id/edt_nama"
+            android:focusable="false"
+            android:inputType="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:drawablePadding="@dimen/_4sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/rounded_box_edittext"
+            android:drawableLeft="@drawable/baseline_person_outline_24"
+            android:text="Muhammad Iqbal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textSize="@dimen/_11ssp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="Email"/>
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:inputType="none"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:drawablePadding="@dimen/_4sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/rounded_box_edittext"
+            android:drawableLeft="@drawable/baseline_person_outline_24"
+            android:text="muhammadiqbal@gmail.com"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:textSize="@dimen/_11ssp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="NIP"/>
+
+        <EditText
+            android:id="@+id/edt_nip"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:drawablePadding="@dimen/_4sdp"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/rounded_box_edittext"
+            android:drawableLeft="@drawable/baseline_credit_card_24"
+            android:text="-"/>
+
+        <LinearLayout
+            android:id="@+id/layout_tambah_nip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum mengisi NIP?"/>
+
+            <TextView
+                android:id="@+id/tv_tambah_nip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Tambahkan NIP"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    state list animator null agar tidak muncul di permukaan saat loading-->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stateListAnimator="@null"
+        android:text="Logout"
+        android:inputType="text"
+        android:drawableLeft="@drawable/baseline_arrow_back_24"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:backgroundTint="#c71717"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_12sdp"/>
+
+    <View
+        android:id="@+id/darkOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_loading"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="24dp">
+
+            <TextView
+                android:id="@+id/tv_hi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:textSize="@dimen/_15ssp"
+                android:text="Hi Nama"/>
+
+            <TextView
+                android:id="@+id/tv_yuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yuk, mulai pemeriksaan SPM"
+                android:textSize="@dimen/_12ssp"
+                android:layout_below="@id/tv_hi"/>
+
+            <ImageButton
+                android:id="@+id/btn_riwayat"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:background="@drawable/ic_riwayat"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:background="@drawable/banner_periksa_spm"
+            app:cardBackgroundColor="#dfdfdf"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:cardCornerRadius="@dimen/_20sdp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:text="Pilih Pemeriksaan SPM"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_190sdp"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:cardElevation="@dimen/_3sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_90sdp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spm_stasiun"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:textSize="@dimen/_12ssp"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:text="SPM Stasiun"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginStart="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/img_calendar1"
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/calendar_minus_1_"/>
+
+                            <TextView
+                                android:id="@+id/tv_tanggal_stasiun"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/img_calendar1"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:textSize="@dimen/_9ssp"
+                                android:text="06 April 2024"/>
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/btn_periksa_spm_stasiun"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:textSize="@dimen/_8ssp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:drawableEnd="@drawable/baseline_arrow_right_alt_24"
+                            android:text="Periksa SPM Stasiun"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_190sdp"
+                    android:layout_marginVertical="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    app:cardElevation="@dimen/_3sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_90sdp"
+                            android:layout_marginTop="16dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/spm_perjalanan"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:textSize="@dimen/_12ssp"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:text="SPM Perjalanan"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginStart="@dimen/_12sdp">
+
+                            <ImageView
+                                android:id="@+id/img_calendar2"
+                                android:layout_width="@dimen/_10sdp"
+                                android:layout_height="@dimen/_10sdp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/calendar_minus_1_"/>
+
+                            <TextView
+                                android:id="@+id/tv_tanggal_perjalanan"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toEndOf="@id/img_calendar2"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:textSize="@dimen/_9ssp"
+                                android:text="06 April 2024"/>
+                        </RelativeLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_periksa_spm_perjalanan"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_marginHorizontal="@dimen/_12sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_marginBottom="@dimen/_12sdp"
+                            android:textSize="@dimen/_8ssp"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:drawableEnd="@drawable/baseline_arrow_right_alt_24"
+                            android:text="Periksa SPM Perjalanan"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Periksa SPM</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_spm_stasiun">SPM Stasiun</string>
+    <string name="title_spm_perjalanan">SPM Perjalanan</string>
+    <string name="title_profil">Profil Saya</string>
+
+    <string name="web_client_id">208970997555-dkv0jaanteanoo31q9tmh7snpd6r0f5f.apps.googleusercontent.com</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_riwayat_pemeriksaan">RiwayatPemeriksaanActivity</string>
+    <string name="tab_text_1">Semua</string>
+    <string name="tab_text_2">SPM Stasiun</string>
+    <string name="tab_text_3">SPM Pejalanan</string>
+</resources>

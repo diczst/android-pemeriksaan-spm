@@ -1,0 +1,90 @@
+todo revisi tanggal 7/11/2024
+
+// sudah
+splash screennya tambahkan logo sttd berdampingan dengan logo lrt smsel
+
+tambahkan nip di profil
+
+tambahkan nip di pdf dibawah nama
+
+di item riwayat pemeriksaan tambahkan nama pemeriksa
+
+tamahkan nama pemeriksa juga di pdf
+
+tambahkan dialog di halaman pemeriksaan (waktu milih aspek)
+
+tambahkan icon bantuan lalu ngebuka pdf flowchart
+
+tambahkan list item yang tidak memenuhi spm (berurutan berdasarkan aspek) ke pdf
+setelah tabel kesimpulan persen (buat tabel aja) jika 100 persen memenuhi spm
+tidak usah dikasih tabel ini
+
+for commit
+====================================================================================================
+
+revisi
+login dari nama dan email jadi username dan password
+Penyesuaian scale pixel dan warna dark mode
+- fragment home (sudah)
+- spm perjalanan (sudah)
+- spm stasiun (sudah)
+- periksa (sudah)
+====================================================================================================
+
+
+
+====================================================================================================
+                                    ====== SUDAH ======
+====================================================================================================
+Item riwayat pemeriksaan diubah
+    Title : Pemeriksaan SPM di
+    subtitle : Nama Stasiun/Perjalanan
+====================================================================================================
+Riwayat Pemeriksaan
+- 1 item mengandung 1 stasiun saja untuk periode 1 bulan dan 6 aspek
+====================================================================================================
+Halaman Pemilihan Aspek yang akan diisi
+- Tambahkan tombol simpan untuk menyimpan semua data aspek
+- Data aspek yang sudah diisi akan ada tanda centang
+====================================================================================================
+Kolom "Gambar" diubah menjadi "Dokumentasi"
+====================================================================================================
+Pembetulan di SPM Perjalanan aspek keamanan dari "Nama Kriteria" menjadi "Tersedia"
+====================================================================================================
+
+PART 2
+====================================================================================================
+Urutkan aspek di PDF | revisi
+====================================================================================================
+Tabel kesimpulan juga diurutkan di pdf | revisi
+====================================================================================================
+Urutkan riwayat dari tanggal terbaru | revisi
+====================================================================================================
+Tulisan "item yang tidak memenuhi.." jika 100 persen dihilangkan saja | revisi
+====================================================================================================
+hapus 2 menu (spm stasiun & perjalanan) dari bottom nav | revisi
+====================================================================================================
+notifikasi pemilihan stasiun jika udah diisi | fitur
+====================================================================================================
+
+PART 3
+====================================================================================================
+revisi data :
+- menambahkan data "Tombol/tuas pembuka pintu otomatis" (SPMDataFormGenerator)
+- menambahkan data "Pintu Keluar atau Masuk Penumpang Secara Manual/Otomatis" (SPMDataFormGenerator)
+- "Alat Pemadam Kebakaran (APAR) 10kg di area bertiket" kata "tidak" dihapus
+- menambahkan data "Safety line dari tepi peron atau PSD (Platform Screen Door)"
+- perbaikan data papan titik kumpul evakuasi
+- perbaikan data sirkulasi udara "balik" menjadi "baik"
+- "Area Stasiun" menjadi "Area Bersih"
+- perbaikan data dari "Tempat Sampah" menjadi ""Tempat Sampah dengan 2 Pembagian (Organik dan Anorganik)"
+
+
+tambah fitur
+==================================
+bisa hapus data riwayat pemeriksaan
+
+=================================
+SARAN PENGEMBANGAN DAN PENGINGAT
+=================================
+Semakin banyak pengecekan data semakin banyak request yang akan dibuat ke database

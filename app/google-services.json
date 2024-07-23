@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "208970997555",
+    "project_id": "periksa-spm",
+    "storage_bucket": "periksa-spm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208970997555:android:fe58af61cd16af78e7a846",
+        "android_client_info": {
+          "package_name": "com.neonusa.periksaspm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208970997555-s0sbap9r35p8mjdm4gbs7gigktpnv7q7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.neonusa.periksaspm",
+            "certificate_hash": "daeb08937f935398a8dd5661af36c64a1da1a58c"
+          }
+        },
+        {
+          "client_id": "208970997555-dkv0jaanteanoo31q9tmh7snpd6r0f5f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnMQHZBP171WT808UhMGaEkp7vsZpkVbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208970997555-dkv0jaanteanoo31q9tmh7snpd6r0f5f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
